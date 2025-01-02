@@ -1,0 +1,14 @@
+torch==2.4.0
+torchvision
+torchaudio
+wandb
+gradio
+sentencepiece
+diffusers==0.32.0
+huggingface_hub==0.27.0
+transformers
+imageio>=2.5.0
+imageio-ffmpeg
+moviepy==1.0.3
+opencv-python>=4.5
+accelerate
