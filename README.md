@@ -1,6 +1,6 @@
 ## TransPixar: Advancing Text-to-Video Generation with Transparency
 <br>
-    <a href="https://arxiv.org/abs/2403.20193"><img src='https://img.shields.io/badge/arXiv-2403.20193-b31b1b.svg'></a>
+    <a href="https://arxiv.org/abs/"><img src='https://img.shields.io/badge/arXiv-25xx.xxxxx-b31b1b.svg'></a>
     <a href='https://wileewang.github.io/TransPixar'><img src='https://img.shields.io/badge/Project_Page-TransPixar-blue'></a>
     <a href='https://huggingface.co/spaces/wileewang/TransPixar'><img src='https://img.shields.io/badge/HuggingFace-TransPixar-yellow'></a>
 <!--     <a href='https://www.youtube.com/watch?v=Wq93zi8bE3U'><img src='https://img.shields.io/badge/Demo_Video-MotionDirector-red'></a> -->
