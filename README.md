@@ -104,15 +104,7 @@ We are grateful for their exceptional work and generous contribution to the open
 ## Citation
 
  ```bibtex
-@misc{wang2024motioninversionvideocustomization,
-      title={Motion Inversion for Video Customization}, 
-      author={Luozhou Wang and Ziyang Mai and Guibao Shen and Yixun Liang and Xin Tao and Pengfei Wan and Di Zhang and Yijun Li and Yingcong Chen},
-      year={2024},
-      eprint={2403.20193},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2403.20193}, 
-}
+
 ``` 
 
 <!-- ## Star History
