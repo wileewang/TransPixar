@@ -44,7 +44,7 @@ Our approach effectively generates diverse and consistent RGBA videos, advancing
 
 * [Installation](#installation)
 * [TransPixar LoRA Hub](#lora-hub) 
-<!-- * [Training](#training) -->
+* [Training](#training)
 * [Inference](#inference)
 * [Acknowledgement](#acknowledgement)
 * [Citation](#citation)
@@ -72,8 +72,8 @@ We provide the following pre-trained LoRA weights for different tasks:
 | T2V + RGBA | [THUDM/CogVideoX-5B](https://huggingface.co/THUDM/CogVideoX-5b) | 49 | [link](https://huggingface.co/wileewang/TransPixar/blob/main/cogvideox_rgba_lora.safetensors) |
 | I2V + RGBA | [THUDM/CogVideoX-5b-I2V](https://huggingface.co/THUDM/CogVideoX-5b-I2V) | 49 | Coming soon |
 
-<!-- ## Training - RGB + Alpha Joint Generation
-We have open-sourced the training code for **Mochi** on RGBA joint generation. Please refer to the [Mochi README](Mochi/README.md) for details. -->
+## Training - RGB + Alpha Joint Generation
+We have open-sourced the training code for **Mochi** on RGBA joint generation. Please refer to the [Mochi README](Mochi/README.md) for details.
 
 
 ## Inference - Gradio Demo
