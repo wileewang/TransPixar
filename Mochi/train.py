@@ -353,7 +353,7 @@ def main(args):
     # The trackers initializes automatically on the main process.
     wandb_run = None
     if args.report_to == "wandb":
-        tracker_name = args.tracker_name or "mochi-1-lora"
+        tracker_name = args.tracker_name or "mochi-1-rgba-lora"
         wandb_run = wandb.init(project=tracker_name, config=vars(args))
 
     # Resume from checkpoint if specified
@@ -481,7 +481,9 @@ def main(args):
                     pipe.enable_model_cpu_offload()
 
                 # validation_prompts = args.validation_prompt.split(args.validation_prompt_separator)
-                validation_prompts = ["a fire is burning in the sky"]
+                validation_prompts = [
+                    "A boy in a white shirt and shorts is seen bouncing a ball, isolated background",
+                ]
                 for validation_prompt in validation_prompts:
                     pipeline_args = {
                         "prompt": validation_prompt,

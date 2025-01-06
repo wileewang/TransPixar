@@ -168,10 +168,13 @@ def prepare_attention_mask(prompt_attention_mask, latents):
     for prompt_attention_mask_i in prompt_attention_mask:
         text_length = torch.sum(prompt_attention_mask_i).item()
         total_length = text_length + seq_length
-        dense_mask = torch.ones((total_length, total_length), dtype=torch.bool)
-        dense_mask[seq_length:, seq_length // 2: seq_length] = False
 
-        rect_attention_mask.append(dense_mask.to(device))
+        if text_length == 0:
+            rect_attention_mask.append(None)
+        else:
+            dense_mask = torch.ones((total_length, total_length), dtype=torch.bool)
+            dense_mask[seq_length:, seq_length // 2: seq_length] = False
+            rect_attention_mask.append(dense_mask.to(device))
 
     return {
         "prompt_attention_mask": prompt_attention_mask,

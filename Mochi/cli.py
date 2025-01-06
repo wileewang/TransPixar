@@ -4,7 +4,7 @@ import torch
 from pipeline_mochi_rgba import MochiPipeline
 from diffusers.utils import export_to_video
 import argparse
-from Mochi.rgba_utils import *
+from rgba_utils import *
 import numpy as np
 
 
@@ -67,13 +67,13 @@ if __name__ == "__main__":
         "--model_path", type=str, default="genmo/mochi-1-preview", help="Path of the pre-trained model use"
     )
     parser.add_argument("--output_path", type=str, default="./output", help="The path save generated video")
-    parser.add_argument("--guidance_scale", type=float, default=3.5, help="The scale for classifier-free guidance")
+    parser.add_argument("--guidance_scale", type=float, default=6, help="The scale for classifier-free guidance")
     parser.add_argument("--num_inference_steps", type=int, default=64, help="Inference steps")
     parser.add_argument("--num_frames", type=int, default=79, help="Number of steps for the inference process")
     parser.add_argument("--width", type=int, default=848, help="Number of steps for the inference process")
     parser.add_argument("--height", type=int, default=480, help="Number of steps for the inference process")
     parser.add_argument("--fps", type=int, default=30, help="Number of steps for the inference process")
-    parser.add_argument("--seed", type=int, default=42, help="The seed for reproducibility")
+    parser.add_argument("--seed", type=int, default=None, help="The seed for reproducibility")
     args = parser.parse_args()
 
     main(args)
