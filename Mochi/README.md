@@ -24,7 +24,7 @@ For RGBA dataset, you can follow the instructions above to preprocess the datase
 
 Here are some detailed steps to prepare the dataset for Mochi-1 fine-tuning:
 
-1. Download our preprocessed [RGBA dataset](https://grail.cs.washington.edu/projects/background-matting-v2/#/datasets), which includes color decontamination and background blur operations.
+1. Download our preprocessed [Video RGBA dataset](https://hkustgz-my.sharepoint.com/:u:/g/personal/lwang592_connect_hkust-gz_edu_cn/EezKQoum3IVJiJ9c8GebNfYBe-xN0OS5mVUvAwyL_rQLuw?e=1obdbA), which has undergone preprocessing operations such as color decontamination and background blur.
 2. Use `trim_and_crop_videos.py` to crop and trim the RGB and Alpha videos as needed.  
 3. Use `embed.py` to encode the RGB videos into latent representations and embed the video captions into embeddings.
 4. Use `embed.py` to encode the Alpha videos into latent representations.
