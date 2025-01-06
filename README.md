@@ -15,7 +15,7 @@
 [Zhe Lin](https://sites.google.com/site/zhelin625/home), 
 [Yingcong Chen†](https://www.yingcong.me)
 
-HKUST(GZ), HKUST, Adobe Research.
+HKUST(GZ)  HKUST Adobe Research.
 
 \* Intership Project.
 \** Project Leader.
