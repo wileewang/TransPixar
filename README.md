@@ -104,7 +104,15 @@ We are grateful for their exceptional work and generous contribution to the open
 ## Citation
 
  ```bibtex
-
+@misc{wang2025transpixaradvancingtexttovideogeneration,
+      title={TransPixar: Advancing Text-to-Video Generation with Transparency}, 
+      author={Luozhou Wang and Yijun Li and Zhifei Chen and Jui-Hsien Wang and Zhifei Zhang and He Zhang and Zhe Lin and Yingcong Chen},
+      year={2025},
+      eprint={2501.03006},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2501.03006}, 
+}
 ``` 
 
 <!-- ## Star History
