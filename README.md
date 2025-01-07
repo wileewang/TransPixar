@@ -31,7 +31,7 @@ Our approach effectively generates diverse and consistent RGBA videos, advancing
 
 
 ## 📰 News
-* **[2024.01.04]** We have released the project page, arXiv paper, inference code and huggingface demo for TransPixar + Mochi.
+* **[2024.01.07]** We have released the project page, arXiv paper, inference code and huggingface demo for TransPixar + Mochi.
 
 ## 🚧 Todo List
 * [x] Release code, paper and demo.
