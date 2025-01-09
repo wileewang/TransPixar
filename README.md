@@ -17,7 +17,7 @@
 
 HKUST(GZ), HKUST, Adobe Research.
 
-\* Intership Project.
+\* Internship Project.
 \** Project Leader.
 † Corresponding Author.
 
