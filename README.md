@@ -17,7 +17,7 @@
 
 HKUST(GZ), HKUST, Adobe Research.
 
-\* Intership Project.
+\* Internship Project.
 \** Project Leader.
 † Corresponding Author.
 
@@ -31,11 +31,15 @@ Our approach effectively generates diverse and consistent RGBA videos, advancing
 
 
 ## 📰 News
-* **[2024.01.07]** We have released the project page, arXiv paper, inference code and huggingface demo for TransPixar + CogVideoX.
+* **[2024.01.07]** We have released the project page, arXiv paper, inference code and huggingface demo for TransPixar + CogVideoX-5B.
+* **[2024.01.14]** Our repository has been receiving significant attention recently, and we’re thrilled by the interest in TransPixar! Many users have requested deployments on new video models, including Hunyuan and LTX, as well as support for ComfyUI. We’ve added these to our to-do list and are eager to make progress. However, training TransPixar LoRA for different video models requires substantial resources and time, so we kindly ask for your patience. Stay tuned for updates! Additionally, we warmly welcome contributions to this repository—your support makes a difference!
 
 ## 🚧 Todo List
 * [x] Release code, paper and demo.
-* [x] Release checkpoints of joint generation (RGB + Alpha). 
+* [x] Release checkpoints of joint generation (RGB + Alpha).
+* [ ] Release checkpoints for Mochi and CogVideoX-I2V
+* [ ] Provide support for ComfyUI
+* [ ] Deploy TransPixar on Hunyuan and LTX video models
 <!-- * [ ] Release checkpoints of more modalities (RGB + Depth).
 * [ ] Release checkpoints of conditional generation (RGB->Alpha). -->
 
@@ -60,17 +64,19 @@ pip install -r requirements.txt
 ```
 
 
+
 ## TransPixar LoRA Hub
 
 Our pipeline is designed to support various video tasks, including Text-to-RGBA Video, Image-to-RGBA Video.
 
 We provide the following pre-trained LoRA weights for different tasks:
 
-| Task | Base Model | Frames  | LoRA weights
-|------|-------------|--------|-----------------|
-| T2V + RGBA | [genmo/mochi-1-preview](https://huggingface.co/genmo/mochi-1-preview) | 37 | Coming soon |
-| T2V + RGBA | [THUDM/CogVideoX-5B](https://huggingface.co/THUDM/CogVideoX-5b) | 49 | [link](https://huggingface.co/wileewang/TransPixar/blob/main/cogvideox_rgba_lora.safetensors) |
-| I2V + RGBA | [THUDM/CogVideoX-5b-I2V](https://huggingface.co/THUDM/CogVideoX-5b-I2V) | 49 | Coming soon |
+| Task          | Base Model                                                    | Frames | LoRA weights                                                       | Inference VRAM |
+|---------------|---------------------------------------------------------------|--------|--------------------------------------------------------------------|----------------|
+| T2V + RGBA   | [genmo/mochi-1-preview](https://huggingface.co/genmo/mochi-1-preview) | 37     | Coming soon                                                       | TBD            |
+| T2V + RGBA   | [THUDM/CogVideoX-5B](https://huggingface.co/THUDM/CogVideoX-5b)       | 49     | [link](https://huggingface.co/wileewang/TransPixar/blob/main/cogvideox_rgba_lora.safetensors) | ~24GB          |
+| I2V + RGBA   | [THUDM/CogVideoX-5b-I2V](https://huggingface.co/THUDM/CogVideoX-5b-I2V) | 49     | Coming soon                                                       | TBD            |
+
 
 ## Training - RGB + Alpha Joint Generation
 We have open-sourced the training code for **Mochi** on RGBA joint generation. Please refer to the [Mochi README](Mochi/README.md) for details.
@@ -115,6 +121,6 @@ We are grateful for their exceptional work and generous contribution to the open
 }
 ``` 
 
-<!-- ## Star History
+## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=hpcaitech/Open-Sora&type=Date)](https://star-history.com/#hpcaitech/Open-Sora&Date) -->
+[![Star History Chart](https://api.star-history.com/svg?repos=wileewang/TransPixar&type=Date)](https://star-history.com/#wileewang/TransPixar&Date)
