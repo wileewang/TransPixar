@@ -32,8 +32,9 @@ Our approach effectively generates diverse and consistent RGBA videos, advancing
 
 
 ## 📰 News
-* **[2024.01.07]** We have released the project page, arXiv paper, inference code and huggingface demo for TransPixar + CogVideoX-5B.
-* **[2024.01.14]** Our repository has been receiving significant attention recently, and we’re thrilled by the interest in TransPixar! Many users have requested deployments on new video models, including Hunyuan and LTX, as well as support for ComfyUI. We’ve added these to our to-do list and are eager to make progress. However, training TransPixar LoRA for different video models requires substantial resources and time, so we kindly ask for your patience. Stay tuned for updates! Additionally, we warmly welcome contributions to this repository—your support makes a difference!
+* **[2025.01.07]** We have released the project page, arXiv paper, inference code and huggingface demo for TransPixar + CogVideoX-5B.
+* **[2025.01.14]** Our repository has been receiving significant attention recently, and we’re thrilled by the interest in TransPixar! Many users have requested deployments on new video models, including Hunyuan and LTX, as well as support for ComfyUI. We’ve added these to our to-do list and are eager to make progress. However, training TransPixar LoRA for different video models requires substantial resources and time, so we kindly ask for your patience. Stay tuned for updates! Additionally, we warmly welcome contributions to this repository—your support makes a difference!
+
 
 ## 🚧 Todo List
 * [x] Release code, paper and demo.
