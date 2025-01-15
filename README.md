@@ -4,7 +4,7 @@
     <a href='https://wileewang.github.io/TransPixar'><img src='https://img.shields.io/badge/Project_Page-TransPixar-blue'></a>
     <a href='https://huggingface.co/spaces/wileewang/TransPixar'><img src='https://img.shields.io/badge/HuggingFace-TransPixar-yellow'></a>
     <a href="https://discord.gg/7Xds3Qjr"><img src="https://img.shields.io/badge/Discord-join-blueviolet?logo=discord&amp"></a>
-    <a href="[https://raw.githubusercontent.com/hpcaitech/public_assets/main/colossalai/img/WeChat.png](https://github.com/wileewang/TransPixar/blob/main/wechat_group.jpg)"><img src="https://img.shields.io/badge/Wechat-Group-green?logo=wechat&amp"></a>
+    <a href="https://github.com/wileewang/TransPixar/blob/main/wechat_group.jpg"><img src="https://img.shields.io/badge/Wechat-Group-green?logo=wechat&amp"></a>
 <!--     <a href='https://www.youtube.com/watch?v=Wq93zi8bE3U'><img src='https://img.shields.io/badge/Demo_Video-MotionDirector-red'></a> -->
 <br>
 
