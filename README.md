@@ -1,4 +1,4 @@
-## TransPixar: Advancing Text-to-Video Generation with Transparency
+## TransPixeler: Advancing Text-to-Video Generation with Transparency
 <br>
     <a href="https://arxiv.org/abs/2501.03006"><img src='https://img.shields.io/badge/arXiv-2501.03006-b31b1b.svg'></a>
     <a href='https://wileewang.github.io/TransPixar'><img src='https://img.shields.io/badge/Project_Page-TransPixar-blue'></a>
@@ -24,7 +24,7 @@ HKUST(GZ), HKUST, Adobe Research.
 † Corresponding Author.
 
 Text-to-video generative models have made significant strides, enabling diverse applications in entertainment, advertising, and education. However, generating RGBA video, which includes alpha channels for transparency, remains a challenge due to limited datasets and the difficulty of adapting existing models. Alpha channels are crucial for visual effects (VFX), allowing transparent elements like smoke and reflections to blend seamlessly into scenes.
-We introduce TransPixar, a method to extend pretrained video models for RGBA generation while retaining the original RGB capabilities. TransPixar leverages a diffusion transformer (DiT) architecture, incorporating alpha-specific tokens and using LoRA-based fine-tuning to jointly generate RGB and alpha channels with high consistency. By optimizing attention mechanisms, TransPixar preserves the strengths of the original RGB model and achieves strong alignment between RGB and alpha channels despite limited training data.
+We introduce TransPixar, a method to extend pretrained video models for RGBA generation while retaining the original RGB capabilities. TransPixar leverages a diffusion transformer (DiT) architecture, incorporating alpha-specific tokens and using LoRA-based fine-tuning to jointly generate RGB and alpha channels with high consistency. By optimizing attention mechanisms, TransPixeler preserves the strengths of the original RGB model and achieves strong alignment between RGB and alpha channels despite limited training data.
 Our approach effectively generates diverse and consistent RGBA videos, advancing the possibilities for VFX and interactive content creation.
 
 <!-- insert a teaser gif -->
@@ -33,6 +33,7 @@ Our approach effectively generates diverse and consistent RGBA videos, advancing
 
 
 ## 📰 News
+* **[2025.01.19]** We've renamed our project from **TransPixar** to **TransPixeler**!!
 * **[2025.01.17]** We’ve created a [Discord group](https://discord.gg/7Xds3Qjr) and a [WeChat group](https://github.com/wileewang/TransPixar/blob/main/wechat_group.jpg)! Everyone is welcome to join for discussions and collaborations. Let’s work together to make the repository even better!
 * **[2025.01.14]** Our repository has been receiving significant attention recently, and we’re thrilled by the interest in TransPixar! Many users have requested deployments on new video models, including Hunyuan and LTX, as well as support for ComfyUI. We’ve added these to our to-do list and are eager to make progress. However, training TransPixar LoRA for different video models requires substantial resources and time, so we kindly ask for your patience. Stay tuned for updates! Additionally, we warmly welcome contributions to this repository—your support makes a difference!
 * **[2025.01.07]** We have released the project page, arXiv paper, inference code and huggingface demo for TransPixar + CogVideoX-5B.
@@ -70,7 +71,7 @@ pip install -r requirements.txt
 
 
 
-## TransPixar LoRA Hub
+## TransPixeler LoRA Hub
 
 Our pipeline is designed to support various video tasks, including Text-to-RGBA Video, Image-to-RGBA Video.
 
