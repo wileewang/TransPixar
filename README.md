@@ -33,6 +33,7 @@ Our approach effectively generates diverse and consistent RGBA videos, advancing
 
 
 ## 📰 News
+* **[2025.02.26]** **TransPixeler** is accepted by CVPR 2025! See you in Nashville!
 * **[2025.01.19]** We've renamed our project from **TransPixar** to **TransPixeler**!!
 * **[2025.01.17]** We’ve created a [Discord group](https://discord.gg/7Xds3Qjr) and a [WeChat group](https://github.com/wileewang/TransPixar/blob/main/wechat_group.jpg)! Everyone is welcome to join for discussions and collaborations. Let’s work together to make the repository even better!
 * **[2025.01.14]** Our repository has been receiving significant attention recently, and we’re thrilled by the interest in TransPixar! Many users have requested deployments on new video models, including Hunyuan and LTX, as well as support for ComfyUI. We’ve added these to our to-do list and are eager to make progress. However, training TransPixar LoRA for different video models requires substantial resources and time, so we kindly ask for your patience. Stay tuned for updates! Additionally, we warmly welcome contributions to this repository—your support makes a difference!
