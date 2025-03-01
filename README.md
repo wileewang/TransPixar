@@ -1,4 +1,4 @@
-## TransPixeler: Advancing Text-to-Video Generation with Transparency
+## TransPixeler: Advancing Text-to-Video Generation with Transparency (CVPR2025)
 <br>
     <a href="https://arxiv.org/abs/2501.03006"><img src='https://img.shields.io/badge/arXiv-2501.03006-b31b1b.svg'></a>
     <a href='https://wileewang.github.io/TransPixar'><img src='https://img.shields.io/badge/Project_Page-TransPixar-blue'></a>
