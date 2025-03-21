@@ -15,7 +15,7 @@
 [Zhifei Zhang](https://zzutk.github.io/), 
 [He Zhang](https://sites.google.com/site/hezhangsprinter), 
 [Zhe Lin](https://sites.google.com/site/zhelin625/home), 
-[Yingcong Chen†](https://www.yingcong.me)
+[Ying-Cong Chen†](https://www.yingcong.me)
 
 HKUST(GZ), HKUST, Adobe Research.
 
