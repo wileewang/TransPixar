@@ -17,8 +17,8 @@ Currently, the implementation is available on the `wan` branch.
 Clone the repository and checkout the `wan` branch:
 
 ```bash
-git clone --recurse-submodules -b wan https://github.com/wileewang/TransPixar.git
-cd TransPixar
+git clone --recurse-submodules -b wan https://github.com/wileewang/TransPixeler.git
+cd TransPixeler
 ```
 
 If you already cloned it and forgot to do `--recurse-submodules`:
