@@ -84,8 +84,8 @@ In the `wan` branch, we have developed and released training code tailored for j
 
 ```bash
 # For the main branch
-conda create -n TransPixar python=3.10
-conda activate TransPixar
+conda create -n TransPixeler python=3.10
+conda activate TransPixeler
 pip install -r requirements.txt
 ```
 
@@ -151,4 +151,4 @@ We are grateful for their exceptional work and generous contribution to the open
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=wileewang/TransPixar&type=Date)](https://star-history.com/#wileewang/TransPixar&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=wileewang/TransPixeler&type=Date)](https://star-history.com/#wileewang/TransPixar&Date)
