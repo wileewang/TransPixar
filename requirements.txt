@@ -1,0 +1,26 @@
+torch==2.4.1
+torchvision==0.19.1
+deepspeed
+toml
+transformers
+diffusers>=0.32.1
+datasets
+pillow
+sentencepiece
+protobuf
+peft
+torch-optimi
+tensorboard
+tqdm
+safetensors
+bitsandbytes
+imageio[ffmpeg]
+av
+einops
+accelerate
+loguru
+# flash-attn
+omegaconf
+iopath
+termcolor
+hydra-core

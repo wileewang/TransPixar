@@ -1,0 +1,107 @@
+# Output path for training runs. Each training run makes a new directory in here.
+output_dir = 'video-generation-runs/rgba-wan-partial-lora'
+
+# Dataset config file.
+dataset = 'configs/dataset.toml'
+# You can have separate eval datasets. Give them a name for Tensorboard metrics.
+eval_datasets = [
+    {name = 'something', config = 'configs/eval_dataset.toml'},
+]
+
+# training settings
+
+# I usually set this to a really high value because I don't know how long I want to train.
+epochs = 100
+# Batch size of a single forward/backward pass for one GPU.
+micro_batch_size_per_gpu = 2
+# Pipeline parallelism degree. A single instance of the model is divided across this many GPUs.
+pipeline_stages = 1
+# Number of micro-batches sent through the pipeline for each training step.
+# If pipeline_stages > 1, a higher GAS means better GPU utilization due to smaller pipeline bubbles (where GPUs aren't overlapping computation).
+gradient_accumulation_steps = 1
+# Grad norm clipping.
+gradient_clipping = 1.0
+# Learning rate warmup.
+warmup_steps = 100
+
+ema_decay = 0.9
+
+# eval settings
+
+eval_every_n_epochs = 100
+eval_every_n_steps = 1000
+eval_before_first_step = false
+# Might want to set these lower for eval so that less images get dropped (eval dataset size is usually much smaller than training set).
+# Each size bucket of images/videos is rounded down to the nearest multiple of the global batch size, so higher global batch size means
+# more dropped images. Usually doesn't matter for training but the eval set is much smaller so it can matter.
+eval_micro_batch_size_per_gpu = 1
+eval_gradient_accumulation_steps = 1
+
+# misc settings
+
+# Probably want to set this a bit higher if you have a smaller dataset so you don't end up with a million saved models.
+save_every_n_epochs = 100
+save_every_n_steps = 1000
+# Can checkpoint the training state every n number of epochs or minutes. Set only one of these. You can resume from checkpoints using the --resume_from_checkpoint flag.
+checkpoint_every_n_epochs = 100
+# checkpoint_every_n_minutes = 120
+# Always set to true unless you have a huge amount of VRAM.
+activation_checkpointing = true
+# Controls how Deepspeed decides how to divide layers across GPUs. Probably don't change this.
+partition_method = 'parameters'
+# dtype for saving the LoRA or model, if different from training dtype
+save_dtype = 'bfloat16'
+# Batch size for caching latents and text embeddings. Increasing can lead to higher GPU utilization during caching phase but uses more memory.
+caching_batch_size = 1
+# How often deepspeed logs to console.
+steps_per_print = 1
+# How to extract video clips for training from a single input video file.
+# The video file is first assigned to one of the configured frame buckets, but then we must extract one or more clips of exactly the right
+# number of frames for that bucket.
+# single_beginning: one clip starting at the beginning of the video
+# single_middle: one clip from the middle of the video (cutting off the start and end equally)
+# multiple_overlapping: extract the minimum number of clips to cover the full range of the video. They might overlap some.
+# default is single_middle
+video_clip_mode = 'single_beginning'
+
+[model]
+type = 'wan-joint-partial-lora'
+# Can load Hunyuan Video entirely from the ckpt path set up for the official inference scripts.
+ckpt_path = 'Wan2.1-T2V-1.3B'
+# Or you can load it by pointing to all the ComfyUI files.
+# transformer_path = '/data2/imagegen_models/hunyuan_video_comfyui/hunyuan_video_720_cfgdistill_fp8_e4m3fn.safetensors'
+# vae_path = '/data2/imagegen_models/hunyuan_video_comfyui/hunyuan_video_vae_bf16.safetensors'
+# llm_path = '/data2/imagegen_models/hunyuan_video_comfyui/llava-llama-3-8b-text-encoder-tokenizer'
+# clip_path = '/data2/imagegen_models/hunyuan_video_comfyui/clip-vit-large-patch14'
+# Base dtype used for all models.
+dtype = 'bfloat16'
+# Hunyuan Video supports fp8 for the transformer when training LoRA.
+transformer_dtype = 'float8'
+# How to sample timesteps to train on. Can be logit_normal or uniform.
+timestep_sample_method = 'logit_normal'
+
+[adapter]
+type = 'lora'
+rank = 256
+alpha = 1
+# Dtype for the LoRA weights you are training.
+dtype = 'bfloat16'
+# You can initialize the lora weights from a previously trained lora.
+# init_from_existing = '/data/user/user69/projects/video-generation_runs/rgba/20250225_10-09-31/epoch1'
+target_modules = [
+    'self_attn',
+    'cross_attn.q',
+    'cross_attn.o',
+    'ffn',
+]
+
+
+[optimizer]
+# AdamW from the optimi library is a good default since it automatically uses Kahan summation when training bfloat16 weights.
+# Look at train.py for other options. You could also easily edit the file and add your own.
+type = 'adamw_optimi'
+lr = 1e-3
+
+betas = [0.9, 0.95]
+weight_decay = 1e-4
+eps = 1e-8
