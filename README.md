@@ -34,8 +34,8 @@ Install Miniconda:
 Create the environment:
 
 ```bash
-conda create -n transpixar python=3.10
-conda activate transpixar
+conda create -n transpixeler python=3.10
+conda activate transpixeler
 ```
 
 Install `nvcc` (optional, if you plan to compile custom CUDA kernels):  
