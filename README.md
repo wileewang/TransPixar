@@ -151,4 +151,4 @@ We are grateful for their exceptional work and generous contribution to the open
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=wileewang/TransPixeler&type=Date)](https://star-history.com/#wileewang/TransPixar&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=wileewang/TransPixeler&type=Date)](https://star-history.com/#wileewang/TransPixeler&Date)
