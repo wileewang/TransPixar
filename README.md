@@ -5,6 +5,7 @@
 <a href='https://huggingface.co/spaces/wileewang/TransPixar'><img src='https://img.shields.io/badge/HuggingFace-TransPixeler-yellow'></a>
 <a href="https://discord.gg/7Xds3Qjr"><img src="https://img.shields.io/badge/Discord-join-blueviolet?logo=discord&amp"></a>
 <a href="https://github.com/wileewang/TransPixar/blob/main/wechat_group.jpg"><img src="https://img.shields.io/badge/Wechat-Join-green?logo=wechat&amp"></a>
+<a href='https://openbayes.com/console/public/tutorials/tKhPalKrDb9'><img src='https://img.shields.io/badge/Demo-OpenBayes贝式计算-blue'></a>
 <br>
 
 [Luozhou Wang*](https://wileewang.github.io/), 
